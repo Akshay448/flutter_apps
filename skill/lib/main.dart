@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'SKILL'),
-      // home: AddSkill(),
+//       home: const MyHomePage(title: 'SKILL'),
+      home: AddSkill(),
       // home: Detail(),
     );
   }

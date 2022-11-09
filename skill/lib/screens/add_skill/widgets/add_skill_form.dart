@@ -41,6 +41,23 @@ class _AddSkillFormState extends State<AddSkillForm> {
               child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
+                  labelText: "Name",
+                  hintText: 'Name',
+                ),
+                // The validator receives the text that the user has entered.
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter some text';
+                  }
+                  return null;
+                },
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
                   labelText: "Phone Number",
                   hintText: 'Phone Number',
                 ),
@@ -51,6 +68,18 @@ class _AddSkillFormState extends State<AddSkillForm> {
                   }
                   return null;
                 },
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 10),
+              child: TextFormField(
+                maxLines: 8,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "Description",
+                  hintText: 'Description',
+                ),
+                // The validator receives the text that the user has entered.
               ),
             ),
             ElevatedButton(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:skill/widgets/star_display_widget.dart';
+import 'package:my_app/widgets/star_display_widget.dart';
 
 class ShowSkiller extends StatelessWidget {
   const ShowSkiller({Key? key}) : super(key: key);

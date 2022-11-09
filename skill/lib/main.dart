@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:skill/screens/add_skill/add_skill.dart';
-import 'package:skill/widgets/search_widget.dart';
-import 'package:skill/widgets/show_skiller_widget.dart';
-import 'package:skill/widgets/skill_categories_widget.dart';
+import 'package:my_app/screens/add_skill/add_skill.dart';
+import 'package:my_app/screens/details/detail.dart';
+import 'package:my_app/widgets/search_widget.dart';
+import 'package:my_app/widgets/show_skiller_widget.dart';
+import 'package:my_app/widgets/skill_categories_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'SKILL'),
       // home: AddSkill(),
+      // home: Detail(),
     );
   }
 }
